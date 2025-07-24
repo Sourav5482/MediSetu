@@ -117,3 +117,25 @@
   background-color: #004d40;
   transform: scale(1.05);
 }
+@media (max-width: 768px) {
+  .doc1 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .docinfo,
+  .slot {
+    width: 100%;
+  }
+
+  .slot {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .slot button {
+    width: 100%;
+  }
+}
