@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const header = document.querySelector(".head");
     if (header) {
         header.addEventListener("click", () => {
-            window.location.href = '/index.html';
+            window.location.href = '/MediSetu/';
         });
     } else {
         console.warn("No .head element found");
