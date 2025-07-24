@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const header = document.querySelector(".head");
     if (header) {
         header.addEventListener("click", () => {
-            window.location.href = '/';
+            window.location.href = './';
         });
     } else {
         console.warn("No .head element found");
