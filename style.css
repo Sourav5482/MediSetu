@@ -1,0 +1,576 @@
+  :root {
+      --lavender: #FDFCF8;
+      --black: #0d3f61;
+
+      --cryola: #0075F2;
+      --cyan: #00F2F2;
+      --curriban: #096B72;
+  }
+
+  /* @import url('https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap'); */
+  /* ----- Reset ----- */
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      color: var(--black);
+  }
+
+  body {
+      /* font-family: "TikTok Sans", sans-   serif; */
+      background-color: var(--lavender);
+      height: 100%;
+      width: 100%;
+  }
+  html{
+    scroll-behavior: smooth;
+    
+  }
+
+  h2::selection {
+      background-color: red;
+      color: white;
+  }
+
+  /* ----- Navbar Styles ----- */
+  nav {
+      background-color: var(--lavender);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: var(--black);
+  }
+
+  .nav-links {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+  }
+
+  .nav-links li a {
+      font-size: 1.3rem;
+
+      text-decoration: none;
+      color: var(--black);
+      font-weight: 500;
+      transition: color 0.3s;
+  }
+
+  .nav-links li a:hover {
+      color: var(--cryola);
+  }
+
+
+  .login-btn {
+      background-color: var(--curriban);
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  }
+
+  .login-btn:hover {
+      background-color: hsl(184, 75%, 19%);
+  }
+
+  .menu-toggle {
+      display: none;
+      font-size: 1.6rem;
+      color: var(--black);
+      cursor: pointer;
+  }
+
+  .page1 {
+      height: 100%;
+      width: 100%;
+      color: var(--black);
+      padding: 0.5rem 2rem;
+  }
+
+  .page1 h2 {
+      font-size: 7.1vw;
+      line-height: 0.9;
+      font-weight: 700;
+
+  }
+
+  .hero {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+
+      /* background-color: gray; */
+
+  }
+
+  .hero img {
+      width: 100%;
+      object-fit: contain;
+      /* object-position: center; */
+  }
+
+  .hero1 {
+      /* background-color: rgb(0, 195, 255); */
+      width: 60%;
+  }
+
+  .hero2 {
+      width: 40%;
+
+      /* background-color: aqua; */
+      display: flex;
+      justify-content: start;
+  }
+
+  .hero h3 {
+      font-size: 3rem;
+      font-weight: 500;
+      margin-top: 2rem;
+      line-height: 1.1;
+      color: var(--black);
+
+  }
+
+  .hero p {
+      font-size: 2rem;
+      font-weight: 400;
+      margin-top: 2rem;
+      line-height: 1.1;
+      color: var(--black);
+
+  }
+
+  .book-btn {
+      background-color: #096B72;
+      color: white;
+      padding: 1rem 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+      margin-top: 2rem;
+  }
+
+  .book-btn:hover {
+      background-color: hsl(184, 75%, 19%)
+  }
+
+  .page2 {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      background-color: var(--lavender);
+  }
+
+  .appointment-section {
+      padding: 2rem 1rem;
+      /* background-color: red; */
+  }
+
+ .page2 h2 {
+      font-size: 3rem;
+      margin-left: 1rem;
+      margin-bottom: 0.5rem;
+  }
+  .para{
+        font-size: 1.5rem;
+        color: #096B72;
+        margin-bottom: 1.5rem;
+        text-align: center;
+  }
+
+  .appointment-section .subtitle {
+      color: #555;
+      margin-bottom: 1.5rem;
+  }
+
+  .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+  }
+
+  .card {
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #eee;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      max-width: 250px;
+      flex: 1 1 200px;
+      overflow: hidden;
+      transition: transform 0.2s;
+  }
+
+  .card:hover {
+      transform: translateY(-5px);
+      cursor: pointer;
+  }
+
+  .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+  }
+
+  .card-content {
+      padding: 1rem;
+  }
+
+  .card-content h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.3rem;
+  }
+
+  .card-content p {
+      font-size: 0.9rem;
+      color: #666;
+  }
+   
+ 
+ .about-us p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+.about-us {
+  color: #333;
+  line-height: 1.7;
+   max-width: 100vw;
+  margin: 0rem auto;
+  padding: 0.5rem 3rem;
+  background-color: #f4faff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+ 
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.about-us h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #0075F2;
+}
+
+.about-us ul {
+  list-style-type: disc;
+  padding-left: 2rem;
+  margin: 1rem 0;
+}
+.contact-us {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+}
+
+
+
+.contact-us h2 {
+  font-size: 2.5rem;
+  color: #0075F2;
+  margin-bottom: 0.5rem;
+}
+
+.contact-us p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background-color: #0075F2;
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #005ac1;
+}
+.footer {
+  background-color: #096B72; /* curriban */
+  color: white;
+  padding: 3rem 1rem 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 2rem;
+}
+
+
+
+.footer-logo h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 0.5rem 0;
+}
+
+.footer-links ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #00F2F2; /* cyan */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 1rem;
+  font-size: 0.9rem;
+}
+.footer h2,
+.footer h3,
+.footer p {
+  color: white;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+
+
+
+  /* ----- Responsive Styles ----- */
+  @media (max-width: 860px) {
+      .nav-links {
+          position: absolute;
+          top: 70px;
+          left: 0;
+          background: var(--lavender);
+          width: 100%;
+          flex-direction: column;
+          gap: 1rem;
+          padding: 1rem 2rem;
+          display: none;
+      }
+
+      .nav-links {
+
+          align-items: start;
+          height: 90vh;
+          background-color: #FDFCF8;
+      }
+
+      .nav-links.active {
+          display: flex;
+
+      }
+
+      .login-btn {
+          width: fit-content;
+      }
+
+      .menu-toggle {
+          display: block;
+      }
+
+      .hero {
+          padding: 0 1rem;
+          width: 100vw;
+          height: auto;
+
+          /* background-color: blanchedalmond; */
+
+      }
+
+      .page1 h2 {
+          font-size: 8vw;
+
+          line-height: 1.2;
+
+      }
+
+      .page1 {
+          padding: 1rem 0rem;
+      }
+
+      .hero img {
+          display: none;
+      }
+
+      .hero1 {
+          width: 100%;
+          /* background-color: #ddd8d9; */
+          /* padding: 1rem; */
+      }
+
+      .hero2 {
+          display: none;
+      }
+
+      .hero h3 {
+          font-size: 5vw;
+          margin-top: 1rem;
+      }
+
+      .hero p {
+          font-size: 29px;
+          margin-top: 1rem;
+      }
+
+      .book-btn {
+          margin-top: 1rem;
+      }
+      .footer {
+    padding: 1rem 0.5rem;
+  }
+.footer {
+    padding: 1rem 1rem;
+  }
+
+  .footer h2 {
+    font-size: 1.8rem;
+  }
+
+  .footer p {
+    font-size: 1rem;
+    margin: 0.6rem 0; /* smaller gap */
+  }
+  
+  }
+
+  @media (max-width: 500px) {
+      .page1 h2 {
+          font-size: 9vw;
+
+          line-height: 1.2;
+
+      }
+
+      .hero h3 {
+          font-size: 23px;
+          margin-top: 1rem;
+          line-height: 1.5;
+      }
+
+      .book-btn {
+          margin-top: 1rem;
+      }
+
+      .hero p {
+          font-size: 18px;
+          margin-top: 1rem;
+          line-height: 1.5;
+      }
+
+      .book-btn {
+          padding: 0.8rem 1.2rem;
+      }
+
+      .page2 {
+          padding: 1rem 0rem;
+
+
+      }
+
+      .page2 h2 {
+         font-size: 1.2rem;
+      margin-left: 1rem;
+      margin-bottom: 0.5rem;
+      
+      }
+      .para{
+        font-size: 1rem;
+        color: #096B72;
+        margin-bottom: 1.5rem;
+        text-align: center;
+  }
+      .appointment-section {
+          padding: 1rem 5rem;
+      }
+        .footer {
+    padding: 1rem 0.5rem;
+  }
+
+ .footer {
+    padding: 1rem 0.5rem;
+  }
+
+  .footer h2 {
+    font-size: 1.4rem;
+  }
+
+  .footer p {
+    font-size: 0.9rem;
+    margin: 0.5rem 0; /* even smaller gap */
+  }
+  }

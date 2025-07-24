@@ -1,0 +1,119 @@
+        :root {
+            --lavender: #FDFCF8;
+            --black: #0d3f61;
+            --cryola: #0075F2;
+            --cyan: #00F2F2;
+            --curriban: #096B72;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            background-color: var(--lavender);
+        }
+        .head {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    background-color: transparent; /* keep transparent, since button has bg */
+    background-color: #ffffff6e;
+    backdrop-filter: blur(5px);
+    padding-top: 0.1px; /* keeps layout consistent */
+}
+
+.head a {
+    font-size: 2rem;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    background-color: var(--curriban); /* your theme color */
+    border-radius: 0 0 40px 40px;
+    display: inline-block;
+    text-align: center;
+}
+
+        
+        .docinfoContainer {
+            width: 100%;
+            padding: 1rem 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .doc1 {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            background: white;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .docinfo {
+            display: flex;
+            width: 50%;
+            gap: 1rem;
+        }
+        .docimg img {
+            height: 5rem;
+            width: 5rem;
+            border-radius: 50%;
+        }
+        .docdetails {
+            color: var(--black);
+        }
+        .docdetails h2 {
+            margin-bottom: 0.5rem;
+        }
+        .book-btn {
+            background-color: var(--cryola);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            margin-top: 0.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .slot {
+            width: 40%;
+        }
+        .slot button {
+            background-color: var(--curriban);
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .aviable {
+            margin-top: 1rem;
+        }
+        .aviable ul {
+            margin-top: 0.5rem;
+            padding-left: 1.2rem;
+        }
+        .aviable li {
+            margin-bottom: 0.4rem;
+        }
+        .back:hover{
+            cursor: pointer;
+        }
+        .back-home-btn {
+ 
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.back-home-btn:hover {
+  background-color: #004d40;
+  transform: scale(1.05);
+}
