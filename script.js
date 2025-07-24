@@ -105,9 +105,9 @@
 
     if (existingPages.includes(formattedTitle)) {
       const capitalized = formattedTitle.charAt(0).toUpperCase() + formattedTitle.slice(1);
-      window.location.href = `/Component/${capitalized}.html`;
+      window.location.href = `Component/${capitalized}.html`;
     } else {
-      window.location.href = "/coming-soon.html";
+      window.location.href = "coming-soon.html";
     }
   });
 
